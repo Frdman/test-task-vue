@@ -1,0 +1,204 @@
+header {
+    margin-top: 20px;
+    align-items: center;
+
+}
+
+a {
+    background-color: #212121;
+    color: white;
+    padding: 10px 15px 15px 15px;
+    border-radius: 5px;
+}
+
+a:hover {
+    color: #212121;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+a.router-link-active.router-link-exact-active {
+    margin-right: 10px;
+}
+
+#start {
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 4.2em;
+    background-color: #ffffff;
+    border: 0.08em solid #212121;
+    border-radius: 0.3em;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#start span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: #fff;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #212121;
+    border: 0.08em solid #efefef;
+    box-shadow: 0 0.4em 0.1em 0.019em #212121;
+}
+
+#start span:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #212121;
+}
+
+#start span:not(hover) {
+    transition: all 1s;
+}
+
+#contentPopup {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 80%;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0px 40px 1px rgb(0 0 0 / 10%);
+}
+
+/* Стили для полупрозрачного фона */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.fields input {
+    background-color: #eee;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    width: 10em;
+    border-radius: 1rem;
+    color: #212121;
+    box-shadow: 0 0.2rem #dfd9d9;
+    cursor: pointer;
+}
+
+.fields input:focus {
+    outline-color: #212121;
+}
+
+ul,
+li {
+    font-size: 20px;
+}
+
+.input-field1 {
+    margin-right: 10px;
+}
+
+input {
+    padding: 5px;
+}
+
+label {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.fields {
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+#submitButton {
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 4.2em;
+    background-color: #212121;
+    border: 0.08em solid #fff;
+    border-radius: 0.3em;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 24.9px;
+}
+
+#submitButton span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: #212121;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+
+#submitButton span:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+}
+
+#submitButton span:not(hover) {
+    transition: all 1s;
+}
+
+@media (max-width:600px) {
+    .fields {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .input-field1 {
+        margin: 0px;
+    }
+
+    input {
+        margin-bottom: 5px;
+    }
+
+    #contentPopup {
+        margin-top: 40px;
+    }
+}
